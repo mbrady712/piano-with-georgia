@@ -1,0 +1,401 @@
+/*All PAGES*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding-top: 6%;
+}
+.boverlay{
+    background-color: rgba(249, 235, 224, .4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.logo{
+    width: 5vw;
+    height: 5vw;
+}
+nav{
+    background-image: -moz-linear-gradient( 90deg, rgb(38,143,177) 0%, rgb(96,199,216) 70%, rgb(153,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(38,143,177) 0%, rgb(96,199,216) 70%, rgb(153,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(38,143,177) 0%, rgb(96,199,216) 70%, rgb(153,255,255) 100%);
+}
+button{
+    right: 0 !important;
+}
+.nav-link{
+    font-family: Monotype Corsiva;
+    font-size: 2.5vw;
+    transition: .5s;
+}
+.nav-link:hover{
+    color: #f9ebe0 !important;
+}
+footer{
+    font-family: Georgia;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #f9ebe0;
+    background-image: -moz-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 30%, rgb(38,143,177) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 30%, rgb(38,143,177) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 30%, rgb(38,143,177) 100%);
+}
+.foot{
+    display: inline;
+    padding-left: 7%;
+    font-size: 1.5vw;
+}
+
+/*MULTIPLE PAGES*/
+
+.wrapper{
+    background-color: rgba(38, 143, 177, .9);
+    /*ALL EXCEPT HOME*/
+}
+h1{
+    font-family: Georgia;
+    color: #f9ebe0;
+    font-size: 3vw;
+    /*LESSONS AND CONTACT*/
+}
+
+/*HOME*/
+
+.home{
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+    height: 100vh;
+}
+.vidtext{
+    padding-top: 15%;
+}
+.testimonial{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    padding-top: 5%;
+    color:rgb(38, 143, 177);
+}
+hr{
+    color:rgb(38, 143, 177);
+}
+
+/*ABOUT*/
+
+.headshot{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 30%;
+}
+.bio{
+    background-color: rgba(38, 143, 177, .9);
+    font-family: Georgia;
+    color: #f9ebe0;
+}
+
+/*LESSONS*/
+
+.vidwrapper{
+    padding: 5%;
+}
+.teachvid{
+    width: 50vw;
+}
+ol{
+    font-family: Georgia;
+    color: #f9ebe0;
+    font-size: 1.5vw;
+}
+.link{
+    font-size: 1.5vw;
+    font-family: Georgia !important;
+    color: #f9ebe0 !important;
+    transition: .5s;
+}
+.link:hover{
+    color: black !important;
+}
+
+
+/*CONTACT*/
+
+.fields{
+    font-family: Georgia;
+    color: #f9ebe0;
+    padding-left: 10%;
+}
+form{
+    font-family: Georgia;
+    color: #f9ebe0;
+    padding-left: 10%;
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+input{
+    border: 2px black solid !important;
+    border-radius: 4px !important;
+    background-color: #f9ebe0 !important;
+    margin-bottom: 2%;
+}
+textarea{
+    border: 2px black solid !important;
+    border-radius: 4px !important;
+    background-color: #f9ebe0 !important;
+    font-size: 2.5vw !important;
+}
+.submit{
+    color: #f9ebe0;
+    background-color: black !important;
+    padding: 1%;
+    border-radius: 4px;
+}
+
+/*RESPONSIVE STYLES*/
+
+/*
+Aspect ratio < 1 (Taller than it is wide):
+Group 1: .40-.50:
+Iphone XR
+Iphone 12 Pro
+Pixel 5
+Galaxy S8
+Galaxy S20 Ultra
+Galaxy Fold
+Galaxy A51/71
+Group 2:  .50-.60:
+Iphone SE
+Group 3: .60-.70: 
+Ipad Air
+Surface Pro
+Group 4: .70-.80:
+Ipad Mini
+Surface Duo
+
+Aspect ratio > 1 (Wider than it is tall):
+Group 1: 1.25-1.43: 
+Ipad Mini
+Surface Duo
+Group 2: 1.43-1.67: 
+Ipad Air
+Surface Pro
+Nest Hub Max
+Group 3: 1.67-2: 
+Iphone SE
+Nest Hub
+Group 4: 2-2.5:
+Iphone XR
+Iphone 12 Pro
+Pixel 5
+Galaxy S8
+Galaxy S20 Ultra
+Galaxy Fold
+Galaxy A51/71
+
+*/
+
+/*AR < 1 Groups 1 & 2*/
+@media only screen and (min-aspect-ratio: 4/10) and (max-aspect-ratio: 6/10) {
+    /*ALL PAGES*/
+    .logo{
+        width: 15vw;
+        height: 15vw;
+    }
+    .nav-link{
+        font-size: 7vw;
+    }
+    .foot{
+        display: block;
+        font-size: 3vw;
+        text-align: center;
+        padding-left: 0;
+    }
+    footer{
+        background-image: -moz-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
+    }
+    /*MULTIPLE PAGES*/
+    h1{
+        font-size: 7vw;
+    }
+    /*HOME*/
+    .vidtext{
+        font-size: 7vw;
+        padding-top: 50%;
+    }
+    .testimonial{
+        font-size: 4vw;
+    }
+    /*ABOUT*/
+    .headshot{
+        width: 70vw;
+        height: 70vw;
+        margin-top: 20% !important;
+    }
+    .bio{
+        font-size: 5vw;
+    }
+    /*LESSONS*/
+    .vidwrapper{
+        margin-top: 20% !important;
+        padding-left: 0;
+    }
+    .teachvid{
+        width: 100vw;
+    }
+    ol{
+        font-size: 5vw;
+    }
+    .infowrapper{
+        padding: 2% !important;
+    }
+    .link{
+        font-size: 5vw;
+    }
+    /*CONTACT*/
+    .contwrap{
+        margin-top: 25% !important;
+    }
+    form{
+        font-size: 5vw;
+        padding-left: 0;
+    }
+    .fields{
+        padding-left: 0;
+    }
+    textarea{
+        font-size: 4vw !important;
+    }
+}
+
+/*AR < 1 Groups 3 and 4*/
+@media only screen and (min-aspect-ratio: 6/10) and (max-aspect-ratio: 8/10) {
+    /*ALL PAGES*/
+    .nav-link{
+        font-size: 4vw;
+    }
+    .logo{
+        width: 10vw;
+        height: 10vw;
+    }
+    .foot{
+        display: block;
+        font-size: 3vw;
+        text-align: center;
+        padding-left: 0;
+    }
+    footer{
+        background-image: -moz-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
+    }
+    /*MULTIPLE PAGES*/
+    h1{
+        font-size: 6vw;
+    }
+    /*HOME*/
+    .vidtext{
+        font-size: 5vw;
+        padding-top: 50%;
+    }
+    /*ABOUT*/
+    .headshot{
+        width: 40vw;
+        height: 40vw;
+        margin-top: 15% !important;
+    }
+    .bio{
+        font-size: 4vw;
+    }
+    /*LESSONS*/
+    .vidwrapper{
+        margin-top: 15% !important;
+    }
+    ol{
+        font-size: 4vw;
+    }
+    .link{
+        font-size: 4vw;
+    }
+    /*CONTACT*/
+    .contwrap{
+        margin-top: 15% !important;
+    }
+    form{
+        font-size: 4vw;
+        padding-left: 0;
+    }
+    .fields{
+        font-size: 3vw;
+        padding-left: 0;
+    }
+    input{
+        font-size: 3.5vw !important;
+    }
+    textarea{
+        font-size: 3.5vw !important;
+    }
+}
+
+/*AR < 1 Group 4*/
+@media only screen and (min-aspect-ratio: 7/10) and (max-aspect-ratio: 8/10) {
+    /*CONTACT*/
+    form, .fields{
+        padding: 0;
+    }
+}
+
+/*AR > 1 All groups*/
+@media only screen and (min-aspect-ratio: 5/4) and (max-aspect-ratio: 5/2) {
+    /*MULTIPLE PAGES*/
+    h1{
+        font-size: 4vw;
+    }
+    /*LESSONS*/
+    ol{
+        font-size: 2.5vw;
+    }
+    .link{
+        font-size: 2.5vw;
+    }
+    /*CONTACT*/
+    .fields{
+        font-size: 2.5vw;
+        padding-left: 0;
+    }
+    form{
+        font-size: 3vw;
+        padding-left: 0;
+    }
+    input{
+        font-size: 2.5vw !important;
+    }
+}
+
+
+/*AR > 1 Group 2*/
+@media only screen and (min-aspect-ratio: 143/100) and (max-aspect-ratio: 167/100) {
+    /*ABOUT*/
+    .bio{
+        font-size: 2.5vw;
+    }
+}
+
+/*AR > 1 Group 4*/
+@media only screen and (min-aspect-ratio: 2/1) and (max-aspect-ratio: 5/2) {
+    /*HOME*/
+    .vidtext{
+        font-size: 5vw;
+    }
+}
