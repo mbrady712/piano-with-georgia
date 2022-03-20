@@ -31,68 +31,141 @@
                             <a href="lessons.html" class="text-dark text-decoration-none nav-link text-center">Lessons</a>
                         </li>
                         <li class="nav-item col">
-                            <a href="contact.php" class="text-dark text-decoration-none nav-link text-center">Contact</a>
+                            <a href="contact.html" class="text-dark text-decoration-none nav-link text-center">Contact</a>
                         </li>
                     </ul>   
                 </div> 
             </div>
         </nav> 
 
-        <video class="home" src="images/piano.mp4" autoplay muted loop>
+        <video class="home" src="images/piano.mp4" autoplay muted loop poster="images/poster.png">
         </video>
-        <div class="overlay">
-            <h1 class="vidtext text-center">
-                Helping people develop into well-rounded, whole musicians.
-            </h1>
+        <div class="vidtext">
+        <h1 class="vidhead text-center">
+            Helping people develop into well-rounded, whole musicians.
+        </h1>
+        <a href="#testimonials" class="notify">See what parents and students have to say about Georgia! <div class="arrow">&#8595;</div></a>
         </div>
-
-        <div class="wrapper row p-5" style="background-color:#f9ebe0; margin-left: 0; margin-right: 0;")>
-            <h1 class="text-center" style="color: rgb(38, 143, 177);">Testimonials</h1>
+        
+    
+        <div class="testcont" id="testimonials">
+            <h1 class="text-center testhead" style="color: rgb(38, 143, 177);">Testimonials</h1>
             <hr>
-            <div class="testimonial col-12">
-                So, here’s the thing. I’ve been a classroom teacher for 20 years, and still I am regularly 
-                amazed at the instructional moves that Georgia has with my 5 year old- and that’s online! 
-                When my daughter gets silly, she’s able to roll with it and then gently move her into a more 
-                productive task. When my daughter has something she’s interested in, Georgia flexibly moved 
-                the piano lesson in that direction, but still covers so many skill. As a result, my kid loves 
-                her piano lessons AND is progressing at a very age-appropriate pace. Did I mention she’s 
-                able to do all of this virtually? Georgia is truly the best teacher we could have ever 
-                hoped for.<br>
-                -Allison, Parent
-            </div>
-            <div class="testimonial col-md-4">
-                "Our daughter has been taking piano lessons remotely with Georgia for many months now 
-                and we love it! Wish it could be in person but we live too far away. My daughter has 
-                learned so much in this short time and is being challenged. Georgia is professional 
-                and fun and just makes you feel comfortable :) we highly recommend her!"<br>
-                -Jess, Parent
-            </div>
-            <div class="testimonial col-md-4">
-                "Georgia truly is a fantastic piano teacher and  musician. She is extremely knowledgeable 
-                and her teaching style has made my son’s lessons with her productive and meaningful. 
-                He truly enjoys learning from her and is growing week by week!  I cannot recommend her 
-                highly enough! She is outstanding!"<br>
-                -Jen, Parent
-            </div>
-            <div class="testimonial col-md-4">
-                "I have been attending lessons with Mrs. Sears for some time now and I absolutely adore each 
-                moment with her. She takes time to talk about personal things as well as teaching piano, 
-                that allows us to respect each other and learn from one another. I recommend her as a piano 
-                teacher!"<br>
-                -Dani, Student
-            </div>
+            <div id="carouselExampleInterval" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                  </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    "Georgia truly is a fantastic piano teacher and  musician. She is extremely knowledgeable 
+                    and her teaching style has made my son’s lessons with her productive and meaningful. 
+                    He truly enjoys learning from her and is growing week by week!  I cannot recommend her 
+                    highly enough! She is outstanding!"<br><br>
+                    -Jen, parent
+                  </div>
+                  <div class="carousel-item">
+                    "So, here’s the thing. I’ve been a classroom teacher for 20 years, and still I am regularly 
+                    amazed at the instructional moves that Georgia has with my 5 year old- and that’s online! 
+                    When my daughter gets silly, she’s able to roll with it and then gently move her into a more 
+                    productive task. When my daughter has something she’s interested in, Georgia flexibly moved 
+                    the piano lesson in that direction, but still covers so many skill. As a result, my kid loves 
+                    her piano lessons AND is progressing at a very age-appropriate pace. Did I mention she’s 
+                    able to do all of this virtually? Georgia is truly the best teacher we could have ever 
+                    hoped for."<br><br>
+                    -Allison, parent
+                  </div>
+                  <div class="carousel-item">
+                    "Our daughter has been taking piano lessons remotely with Georgia for many months now 
+                    and we love it! Wish it could be in person but we live too far away. My daughter has 
+                    learned so much in this short time and is being challenged. Georgia is professional 
+                    and fun and just makes you feel comfortable :) we highly recommend her!"<br><br>
+                    -Jess, parent
+                  </div>
+                  <div class="carousel-item">
+                    "I have been attending lessons with Mrs. Sears for some time now and I absolutely adore each 
+                    moment with her. She takes time to talk about personal things as well as teaching piano, 
+                    that allows us to respect each other and learn from one another. I recommend her as a piano 
+                    teacher!"<br><br>
+                    -Dani, student
+                  </div>
+                  <div class="carousel-item">
+                    She loves the piano and has a deep appreciation for anyone that has interest in learning this amazing instrument.
+                    I highly recommend this teacher to anyone that wants to learn how to play.
+                    If 6 stars were allowed, I would be asking if 7 stars were available.
+                    She is an exceptional piano teacher."<br><br>
+                    -Adam, student
+                  </div>
+                  <div class="carousel-item">
+                    "Georgia is truly the most amazing piano teacher I could have asked for. She instilled a love for music in me 
+                    that led me to start teaching, also!! She emphasizes bringing out the beauty of the music, and truly helps you 
+                    fall in love with each piece you learn. I’m so thankful to have had her as my teacher for so many years, and I 
+                    can only hope to help my children learn to love music as much as she helped me."<br><br>
+                    -Lisa, student
+                  </div>
+                  <div class="carousel-item">
+                    "Ms. Georgia is a phenomenal teacher and all around person to learn music with! I grew so much as a pianist 
+                    under her instruction, which is personalized and inspired and so full of joy."<br><br>
+                    -Roshan, student
+                  </div>
+                  <div class="carousel-item">
+                    "Georgia Sears is an inspiring and motivating piano teacher! We could not have found a better teacher when 
+                    we moved to Arizona 16 years ago. She taught both my son and daughter for several years when she resided in 
+                    the Phoenix west valley. She took their piano skills, musicality and artistry to new heights while guiding 
+                    them in winning several competitions and awards.  They not only grew as pianists, but also developed a love 
+                    for playing piano that has continued into adulthood. As a former student of Georgia myself, I took great 
+                    delight in my lessons with her. She inspired me in such a way that I found a new joy in playing piano. 
+                    No matter your age or skill level, Georgia will bring out the best in your playing. In addition to her 
+                    phenomenal qualifications and experience,  her calm, patient and friendly personality will have you 
+                    looking forward to each lesson. I highly recommend her!"<br><br>
+                    -Pamela, parent
+                  </div>
+                  <div class="carousel-item">
+                  "My two children studied piano with Georgia for five wonderful years during her time in Austin, Texas.  
+                  Both her in-person and online classes were a constant source of joy for my kids: a respite from the everyday 
+                  pressures of being students, kids, and siblings.  Georgia always found a way to bring lightness to her lessons 
+                  while still motivating both kids to seek out their best efforts.  She has a wonderful sense of artistry and 
+                  knows how to met each child at their technique level to find success and inspiration.  My children love playing 
+                  the piano and I am convinced Georgia is at the root of that passion."<br><br>
+                  -Barksdale, parent
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
             
             
-        <footer class="container-fluid">
+        <footer>
                 <p class="foot">
-                    Teaching Location: Sunnyside, Katchina, or online
+                    Teaching Location: <a class="footlink" href="https://www.google.com/maps/place/Infusing+Music+Studios/@35.2173614,-111.6244737,17z/data=!3m1!4b1!4m5!3m4!1s0x872d8f2b22cca3ef:0x18e6a901eb278d5a!8m2!3d35.217357!4d-111.622285">
+                        Sunnyside</a>, <a class="footlink" href="https://www.google.com/maps/place/2246+Gambel+Oak+Trail,+Flagstaff,+AZ+86005/@35.1054033,-111.6889712,16.37z/data=!4m5!3m4!1s0x872d9abe51d041bf:0xd19e06370cc927a4!8m2!3d35.104472!4d-111.6864213">
+                        Kachina</a>, or online
                 </p>
                 <p class="foot">
-                    pianowithgeorgia@gmail.com
+                    <a class="footlink" href="mailto:pianowithgeorgia@gmail.com">
+                        <script>
+                        var s1="pianowithgeorgia"
+                        var s2="@"
+                        var s3="gmail.com"
+                        document.write(s1+s2+s3);
+                        </script></a>
                 </p>
                 <p class="foot">
-                    602-405-8935
+                    <a class="footlink" href="tel:6024058935">602-405-8935</a>
                 </p>
         </footer>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

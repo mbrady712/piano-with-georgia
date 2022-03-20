@@ -4,8 +4,11 @@
     margin: 0;
     padding: 0;
 }
+html {
+    zoom: 100%;
+}
 body{
-    padding-top: 6%;
+    padding-top: 5%;
 }
 .boverlay{
     background-color: rgba(249, 235, 224, .4);
@@ -15,21 +18,21 @@ body{
     z-index: -1;
 }
 .logo{
-    width: 5vw;
-    height: 5vw;
+    width: 50px;
+    height: 50px;
 }
 nav{
     background-image: -moz-linear-gradient( 90deg, rgb(38,143,177) 0%, rgb(96,199,216) 70%, rgb(153,255,255) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(38,143,177) 0%, rgb(96,199,216) 70%, rgb(153,255,255) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(38,143,177) 0%, rgb(96,199,216) 70%, rgb(153,255,255) 100%);
 }
-button{
+.navbar-toggler{
     right: 0 !important;
 }
 .nav-link{
     font-family: Monotype Corsiva;
-    font-size: 2.5vw;
     transition: .5s;
+    font-size: 2em;
 }
 .nav-link:hover{
     color: #f9ebe0 !important;
@@ -45,55 +48,87 @@ footer{
 }
 .foot{
     display: inline;
-    padding-left: 7%;
-    font-size: 1.5vw;
+    padding-left: 10%;
+    font-size: 1em;
+}
+.footlink{
+    text-decoration: underline;
+    color: #f9ebe0;
+}
+.footlink:hover{
+    color: black;
 }
 
 /*MULTIPLE PAGES*/
-
+/*ALL EXCEPT HOME*/
 .wrapper{
     background-color: rgba(38, 143, 177, .9);
-    /*ALL EXCEPT HOME*/
 }
+/*LESSONS AND CONTACT*/
 h1{
     font-family: Georgia;
     color: #f9ebe0;
-    font-size: 3vw;
-    /*LESSONS AND CONTACT*/
+    font-size: 3em;
 }
 
 /*HOME*/
-
 .home{
-    z-index: -1;
-    position: absolute;
-    height: 100vh;
     width: 100%;
+    /*URL: https://www.pexels.com/video/close-up-footage-of-someone-playing-a-piano-3865344/*/
+    height: 715px;
     object-fit: cover;
 }
-.overlay{
-    background-color: rgba(0, 0, 0, .2);
-    width: 100%;
-    height: 100vh;
+.vidhead{
+    margin-bottom: 10%;
 }
 .vidtext{
-    padding-top: 15%;
+    margin-top: -40%;
+    margin-bottom: 30%;
 }
-.testimonial{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2vw;
+.testcont{
+    background-color:#f9ebe0;
+    padding: 4%;
+}
+.notify{
+    text-decoration: none;
+    background-color: rgba(38, 143, 177, .8);
+    color: #f9ebe0;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: 5%;
+    padding: 1%;
+    font-family: Georgia;
+}
+.notify:hover{
+    color: black;
+}
+.arrow{
+    display: inline;
+    font-size: 1.5em;
+}
+.testhead{
     padding-top: 5%;
-    color:rgb(38, 143, 177);
 }
 hr{
+    color:rgb(38, 143, 177);
+    width: 80% !important;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.carousel-item{
+    height: 400px;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-right: 10%;
+    font-family: Georgia;
     color:rgb(38, 143, 177);
 }
 
 /*ABOUT*/
 
 .headshot{
-    width: 25vw;
-    height: 25vw;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     object-fit: cover;
     object-position: 30%;
@@ -102,12 +137,19 @@ hr{
     background-color: rgba(38, 143, 177, .9);
     font-family: Georgia;
     color: #f9ebe0;
+    font-size: 1em;
 }
 
 /*LESSONS*/
 
 .vidwrapper{
     padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.infowrapper{
+    padding: 5%;
+    margin-bottom: 5%;
 }
 .teachvid{
     width: 50vw;
@@ -115,10 +157,10 @@ hr{
 ol{
     font-family: Georgia;
     color: #f9ebe0;
-    font-size: 1.5vw;
+    font-size: 1em;
 }
 .link{
-    font-size: 1.5vw;
+    font-size: 1em;
     font-family: Georgia !important;
     color: #f9ebe0 !important;
     transition: .5s;
@@ -133,14 +175,17 @@ ol{
 .fields{
     font-family: Georgia;
     color: #f9ebe0;
-    padding-left: 10%;
+    text-align: center;
+}
+.contwrap{
+    margin-top: 5%;
+    padding: 3%;
+    margin-bottom: 5%;
 }
 form{
     font-family: Georgia;
     color: #f9ebe0;
-    padding-left: 10%;
-    font-size: 2vw;
-    margin-bottom: 2%;
+    font-size: 1em;
 }
 input{
     border: 2px black solid !important;
@@ -152,7 +197,7 @@ textarea{
     border: 2px black solid !important;
     border-radius: 4px !important;
     background-color: #f9ebe0 !important;
-    font-size: 2.5vw !important;
+    font-size: 1em !important;
 }
 .submit{
     color: #f9ebe0;
@@ -163,239 +208,228 @@ textarea{
 
 /*RESPONSIVE STYLES*/
 
-/*
-Aspect ratio < 1 (Taller than it is wide):
-Group 1: .40-.50:
-Iphone XR
-Iphone 12 Pro
-Pixel 5
-Galaxy S8
-Galaxy S20 Ultra
-Galaxy Fold
-Galaxy A51/71
-Group 2:  .50-.60:
-Iphone SE
-Group 3: .60-.70: 
-Ipad Air
-Surface Pro
-Group 4: .70-.80:
-Ipad Mini
-Surface Duo
-
-Aspect ratio > 1 (Wider than it is tall):
-Group 1: 1.25-1.43: 
-Ipad Mini
-Surface Duo
-Group 2: 1.43-1.67: 
-Ipad Air
-Surface Pro
-Nest Hub Max
-Group 3: 1.67-2: 
-Iphone SE
-Nest Hub
-Group 4: 2-2.5:
-Iphone XR
-Iphone 12 Pro
-Pixel 5
-Galaxy S8
-Galaxy S20 Ultra
-Galaxy Fold
-Galaxy A51/71
-
-*/
-
-/*AR < 1 Groups 1 & 2*/
-@media only screen and (min-aspect-ratio: 4/10) and (max-aspect-ratio: 6/10) {
+/*320px — 480px: Mobile devices*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
     /*ALL PAGES*/
     .logo{
-        width: 15vw;
-        height: 15vw;
+        width: 50px;
+        height: 50px;
     }
     .nav-link{
-        font-size: 7vw;
+        font-size: 1.5em;
     }
-    .foot{
-        display: block;
-        font-size: 3vw;
-        text-align: center;
-        padding-left: 0;
+    span{
+        width: 25px !important;
+        height: 25px !important;
     }
     footer{
         background-image: -moz-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
         background-image: -webkit-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
         background-image: -ms-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
     }
-    /*MULTIPLE PAGES*/
-    h1{
-        font-size: 7vw;
+    .foot{
+        display: block;
+        font-size: .75em;
+        padding-left: 5%;
     }
     /*HOME*/
-    .vidtext{
-        font-size: 7vw;
-        padding-top: 50%;
+    .home{
+        height: 300px;
+        margin-top: 10%;
     }
-    .testimonial{
-        font-size: 4vw;
+    .vidhead{
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    .vidtext{
+        margin-bottom: 17vw;
+        margin-top: -45%;
+    }
+    .notify{
+        visibility: hidden;
+    }
+    .testhead{
+        font-size: 1.5em;
+        padding-top: 15%;
+    }
+    .testcont{
+        margin-top: 0;
+    }
+    .carousel-item{
+        overflow: scroll;
+        font-size: .9em;
+        padding-bottom: 10%;
     }
     /*ABOUT*/
     .headshot{
-        width: 70vw;
-        height: 70vw;
-        margin-top: 20% !important;
-    }
-    .bio{
-        font-size: 5vw;
+        width: 200px;
+        height: 200px;
+        margin-top: 30% !important;
     }
     /*LESSONS*/
-    .vidwrapper{
-        margin-top: 20% !important;
-        padding-left: 0;
+    h1{
+        font-size: 1.5em;
     }
     .teachvid{
-        width: 100vw;
+        width: 100%;
     }
-    ol{
-        font-size: 5vw;
-    }
-    .infowrapper{
-        padding: 2% !important;
-    }
-    .link{
-        font-size: 5vw;
+    .vidwrapper{
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 23%;
     }
     /*CONTACT*/
     .contwrap{
-        margin-top: 25% !important;
-    }
-    form{
-        font-size: 5vw;
-        padding-left: 0;
+        margin-top: 30%;
+        margin-bottom: 15%;
     }
     .fields{
-        padding-left: 0;
-    }
-    textarea{
-        font-size: 4vw !important;
+        text-align: center;
     }
 }
 
-/*AR < 1 Groups 3 and 4*/
-@media only screen and (min-aspect-ratio: 6/10) and (max-aspect-ratio: 8/10) {
+/*481px — 768px: iPads, Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
     /*ALL PAGES*/
     .nav-link{
-        font-size: 4vw;
-    }
-    .logo{
-        width: 10vw;
-        height: 10vw;
+        font-size: 1.5em;
     }
     .foot{
         display: block;
-        font-size: 3vw;
-        text-align: center;
-        padding-left: 0;
-    }
-    footer{
-        background-image: -moz-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
-        background-image: -webkit-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
-        background-image: -ms-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
-    }
-    /*MULTIPLE PAGES*/
-    h1{
-        font-size: 6vw;
+        font-size: 1em;
+        padding-left: 5%;
     }
     /*HOME*/
+    .home{
+        height: 300px;
+        margin-top: 5%;
+    }
+    .vidhead{
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }
     .vidtext{
-        font-size: 5vw;
-        padding-top: 50%;
+        margin-top: -30%;
+        margin-bottom: 15vw;
+    }
+    .notify{
+        visibility: hidden;
+    }
+    .testhead{
+        font-size: 1.5em;
+        padding-top: 15%;
+    }
+    .testcont{
+        margin-top: 0;
+    }
+    .carousel-item{
+        overflow: scroll;
+        font-size: .9em;
+        padding-bottom: 10%;
     }
     /*ABOUT*/
     .headshot{
-        width: 40vw;
-        height: 40vw;
-        margin-top: 15% !important;
-    }
-    .bio{
-        font-size: 4vw;
+        width: 250px;
+        height: 250px;
+        margin-top: 20% !important;
     }
     /*LESSONS*/
+    h1{
+        font-size: 1.5em;
+    }
+    .teachvid{
+        width: 80%;
+    }
     .vidwrapper{
-        margin-top: 15% !important;
-    }
-    ol{
-        font-size: 4vw;
-    }
-    .link{
-        font-size: 4vw;
+        margin-top: 15%;
     }
     /*CONTACT*/
     .contwrap{
-        margin-top: 15% !important;
-    }
-    form{
-        font-size: 4vw;
-        padding-left: 0;
+        margin-top: 15%;
+        margin-bottom: 10%;
     }
     .fields{
-        font-size: 3vw;
-        padding-left: 0;
-    }
-    input{
-        font-size: 3.5vw !important;
-    }
-    textarea{
-        font-size: 3.5vw !important;
+        text-align: center;
     }
 }
 
-/*AR < 1 Group 4*/
-@media only screen and (min-aspect-ratio: 7/10) and (max-aspect-ratio: 8/10) {
-    /*CONTACT*/
-    form, .fields{
-        padding: 0;
+/*769px — 1024px: Small screens, laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    /*ALL PAGES*/
+    .foot{
+        font-size: .75em;
+        padding-left: 7%;
     }
-}
-
-/*AR > 1 All groups*/
-@media only screen and (min-aspect-ratio: 5/4) and (max-aspect-ratio: 5/2) {
-    /*MULTIPLE PAGES*/
-    h1{
-        font-size: 4vw;
-    }
-    /*LESSONS*/
-    ol{
-        font-size: 2.5vw;
-    }
-    .link{
-        font-size: 2.5vw;
-    }
-    /*CONTACT*/
-    .fields{
-        font-size: 2.5vw;
-        padding-left: 0;
-    }
-    form{
-        font-size: 3vw;
-        padding-left: 0;
-    }
-    input{
-        font-size: 2.5vw !important;
-    }
-}
-
-
-/*AR > 1 Group 2*/
-@media only screen and (min-aspect-ratio: 143/100) and (max-aspect-ratio: 167/100) {
-    /*ABOUT*/
-    .bio{
-        font-size: 2.5vw;
-    }
-}
-
-/*AR > 1 Group 4*/
-@media only screen and (min-aspect-ratio: 2/1) and (max-aspect-ratio: 5/2) {
     /*HOME*/
+    .home{
+        height: 400px;
+        margin-top: 2%;
+    }
+    .vidhead{
+        margin-bottom: 0;
+        font-size: 2em;
+    }
     .vidtext{
-        font-size: 5vw;
+        margin-top: -20%;
+        margin-bottom: 7vw;
+    }
+    .notify{
+        visibility: hidden;
+    }
+    .testhead{
+        font-size: 2em;
+        padding-top: 15%;
+    }
+    .testcont{
+        margin-top: 0;
+    }
+    .carousel-item{
+        overflow: scroll;
+        font-size: .9em;
+        padding-bottom: 10%;
+    }
+    /*ABOUT*/
+    h1{
+        font-size: 2em;
+    }
+    .teachvid{
+        width: 80%;
+    }
+    .vidwrapper{
+        margin-top: 10%;
+    }
+    /*CONTACT*/
+    .contwrap{
+        margin-top: 10%;
+    }
+    .fields{
+        text-align: center;
+    }
+}
+
+/*1025px — 1205px: Desktops, large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1205px){
+    /*ALL PAGES*/
+    .foot{
+        font-size: .8em;
+        padding-left: 12%;
+    }
+    /*HOME*/
+    .vidhead{
+        font-size: 2em;
+        margin-bottom: 13%;
+    }
+    .notify{
+        font-size: 1em;
+    }
+    .testhead{
+        padding-top: 5%;
+    }
+    /*CONTACT*/
+    .contwrap{
+        margin-top: 10%;
+    }
+    .fields{
+        text-align: center;
     }
 }
