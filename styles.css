@@ -96,9 +96,10 @@ h1{
     color: #f9ebe0;
     position: absolute;
     border-radius: 5px;
-    margin-left: 5%;
+    margin-left: 32%;
     padding: 1%;
     font-family: Georgia;
+    width: 36%;
 }
 .notify:hover{
     color: black;
@@ -123,6 +124,10 @@ hr{
     padding-right: 10%;
     font-family: Georgia;
     color:rgb(38, 143, 177);
+}
+.quote{
+    font-size: 1.2em;
+    margin-bottom: 2.5%;
 }
 
 /*ABOUT*/
