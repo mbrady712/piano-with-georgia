@@ -1,7 +1,6 @@
 <?php 
 if(isset($_POST['submit'])){
-    $to = "michaelbrady712@gmail.com"; 
-	$id = "Form Submission";
+    $to = "pianowithgeorgia@gmail.com"; 
     $contact_name = $_POST['contact_name'];
     $student_name = $_POST['student_name'];
 	$phone = $_POST['phone'];
@@ -18,7 +17,10 @@ if(isset($_POST['submit'])){
 		"\nStudent's Age (if adult - you can just write \"adult\"): " . $age . 
 		"\nStudent's Experience (if any): " . $experience . 
 		"\nTell me a little about yourself and/or what you would like to learn: " . $message;
-    $headers = "From: " . $id;
+    $headers = 'From: pianowithgeorgia@example.com' . "\r\n" .
+    'Reply-To: pianowithgeorgia@example.com' . "\r\n" .
+	'MIME-Version: 1.0' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
     mail($to,$subject,$text,$headers);
     header("Location: contact.html");
     }
