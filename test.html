@@ -1,251 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      /*
-Aspect ratio < 1 (Taller than it is wide):
-Group 1: .40-.50:
-Iphone XR
-Iphone 12 Pro
-Pixel 5
-Galaxy S8
-Galaxy S20 Ultra
-Galaxy Fold
-Galaxy A51/71
-Group 2:  .50-.60:
-Iphone SE
-Group 3: .60-.70: 
-Ipad Air
-Surface Pro
-Group 4: .70-.80:
-Ipad Mini
-Surface Duo
-
-Aspect ratio > 1 (Wider than it is tall):
-Group 1: 1.25-1.43: 
-Ipad Mini
-Surface Duo
-Group 2: 1.43-1.67: 
-Ipad Air
-Surface Pro
-Nest Hub Max
-Group 3: 1.67-2: 
-Iphone SE
-Nest Hub
-Group 4: 2-2.5:
-Iphone XR
-Iphone 12 Pro
-Pixel 5
-Galaxy S8
-Galaxy S20 Ultra
-Galaxy Fold
-Galaxy A51/71
-
-*/
-
-/*AR < 1 Groups 1 & 2*/
-@media only screen and (min-aspect-ratio: 4/10) and (max-aspect-ratio: 6/10) {
-    /*ALL PAGES*/
-    .logo{
-        width: 15vw;
-        height: 15vw;
-    }
-    .nav-link{
-        font-size: 7vw;
-    }
-    .foot{
-        display: block;
-        font-size: 3vw;
-        text-align: center;
-        padding-left: 0;
-    }
-    footer{
-        background-image: -moz-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
-        background-image: -webkit-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
-        background-image: -ms-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
-    }
-    /*MULTIPLE PAGES*/
-    h1{
-        font-size: 7vw;
-    }
-    /*HOME*/
-    .vidtext{
-        font-size: 7vw;
-        padding-top: 50%;
-    }
-    .testimonial{
-        font-size: 4vw;
-    }
-    /*ABOUT*/
-    .headshot{
-        width: 70vw;
-        height: 70vw;
-        margin-top: 20% !important;
-    }
-    .bio{
-        font-size: 5vw;
-    }
-    /*LESSONS*/
-    .vidwrapper{
-        margin-top: 20% !important;
-        padding-left: 0;
-    }
-    .teachvid{
-        width: 100vw;
-    }
-    ol{
-        font-size: 5vw;
-    }
-    .infowrapper{
-        padding: 2% !important;
-    }
-    .link{
-        font-size: 5vw;
-    }
-    /*CONTACT*/
-    .contwrap{
-        margin-top: 25% !important;
-    }
-    form{
-        font-size: 5vw;
-        padding-left: 0;
-    }
-    .fields{
-        padding-left: 0;
-    }
-    textarea{
-        font-size: 4vw !important;
-    }
-}
-
-/*AR < 1 Groups 3 and 4*/
-@media only screen and (min-aspect-ratio: 6/10) and (max-aspect-ratio: 8/10) {
-    /*ALL PAGES*/
-    .nav-link{
-        font-size: 4vw;
-    }
-    .logo{
-        width: 10vw;
-        height: 10vw;
-    }
-    .foot{
-        display: block;
-        font-size: 3vw;
-        text-align: center;
-        padding-left: 0;
-    }
-    footer{
-        background-image: -moz-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
-        background-image: -webkit-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
-        background-image: -ms-linear-gradient( 90deg, rgb(153,255,255) 0%, rgb(96,199,216) 20%, rgb(38,143,177) 100%);
-    }
-    /*MULTIPLE PAGES*/
-    h1{
-        font-size: 6vw;
-    }
-    /*HOME*/
-    .vidtext{
-        font-size: 5vw;
-        padding-top: 50%;
-    }
-    /*ABOUT*/
-    .headshot{
-        width: 40vw;
-        height: 40vw;
-        margin-top: 15% !important;
-    }
-    .bio{
-        font-size: 4vw;
-    }
-    /*LESSONS*/
-    .vidwrapper{
-        margin-top: 15% !important;
-    }
-    ol{
-        font-size: 4vw;
-    }
-    .link{
-        font-size: 4vw;
-    }
-    /*CONTACT*/
-    .contwrap{
-        margin-top: 15% !important;
-    }
-    form{
-        font-size: 4vw;
-        padding-left: 0;
-    }
-    .fields{
-        font-size: 3vw;
-        padding-left: 0;
-    }
-    input{
-        font-size: 3.5vw !important;
-    }
-    textarea{
-        font-size: 3.5vw !important;
-    }
-}
-
-/*AR < 1 Group 4*/
-@media only screen and (min-aspect-ratio: 7/10) and (max-aspect-ratio: 8/10) {
-    /*CONTACT*/
-    form, .fields{
-        padding: 0;
-    }
-}
-
-/*AR > 1 All groups*/
-@media only screen and (min-aspect-ratio: 5/4) and (max-aspect-ratio: 5/2) {
-    /*MULTIPLE PAGES*/
-    h1{
-        font-size: 4vw;
-    }
-    /*LESSONS*/
-    ol{
-        font-size: 2.5vw;
-    }
-    .link{
-        font-size: 2.5vw;
-    }
-    /*CONTACT*/
-    .fields{
-        font-size: 2.5vw;
-        padding-left: 0;
-    }
-    form{
-        font-size: 3vw;
-        padding-left: 0;
-    }
-    input{
-        font-size: 2.5vw !important;
-    }
-}
-
-
-/*AR > 1 Group 2*/
-@media only screen and (min-aspect-ratio: 143/100) and (max-aspect-ratio: 167/100) {
-    /*ABOUT*/
-    .bio{
-        font-size: 2.5vw;
-    }
-}
-
-/*AR > 1 Group 4*/
-@media only screen and (min-aspect-ratio: 2/1) and (max-aspect-ratio: 5/2) {
-    /*HOME*/
-    .vidtext{
-        font-size: 5vw;
-    }
-}
-
-    </style>
-</head>
-<body>
-    
-</body>
+    <head>
+        <title>
+            Piano With Georgia
+        </title>
+        <link rel="icon" type="image/x-icon" href="images/favicon1.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+        <form action="contact.php" method="post" class=" container-fluid row needs-validation" novalidate>
+            <div class="col-lg-6">
+                Contact Name* <br><input type="text" name="contact_name" placeholder="Name" 
+                class="form-control" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please enter the contact's name
+                </div>
+            </div>
+            <div class="col-lg-12">
+                Tell me a little about yourself and/or what you would like to learn!* 
+                <br><textarea rows="5" name="message" cols="30" placeholder="Message" 
+                class="form-control" required></textarea>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please leave a message
+                </div>
+            </div>
+            <div class="col-2 mt-3">
+                <input type="submit" name="submit" value="SUBMIT" class="submit">
+            </div>
+        </form>
+        <footer>
+        </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+            crossorigin="anonymous"></script>
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                    'use strict'
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.querySelectorAll('.needs-validation')
+                // Loop over them and prevent submission
+                    Array.prototype.slice.call(forms)
+                        .forEach(function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault()
+                                    event.stopPropagation()
+                                }
+                                else{
+                                    alert("Form successfully submitted!")
+                                }
+                                form.classList.add('was-validated')
+                            }, false)
+                        })
+                })()
+            </script>
+    </body>
 </html>
