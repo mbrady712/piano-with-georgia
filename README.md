@@ -1,2 +1,2 @@
-# captstone-project
- ACC Web Certification Final Project
+# piano-with-georgia
+I made this site for Georgia Sears, a former co-worker at the Orpheus Academy. The site was my capstone project for my Web Development Certification. With help from my advisor, Greg Hervey, I was able to create a professional, well functioning site in just one month. Photoshop was used for mockups and HTML, CSS, and Bootstrap were used to create the site. For contact form validation and to email the form data, I used Bootstrap, Javascript, and PHP. It can be viewed at https://pianowithgeorgia.com.
